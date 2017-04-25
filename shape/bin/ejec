@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var type = process.argv[2];
+var geom = require(type+'-kaku');
+var opt = JSON.parse(process.argv[3]);
+
+var result = new geom(opt);
+console.log(result.getArea());
+
+
